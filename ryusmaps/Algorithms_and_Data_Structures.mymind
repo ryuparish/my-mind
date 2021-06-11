@@ -1,0 +1,336 @@
+{
+	"root": {
+		"id": "xuoeavpw",
+		"text": "Algorithms and Data Structures",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "ptsiveqm",
+				"text": "Data Structures",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "bzbyhlkx",
+						"text": "Binary Search Trees",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ikebfacq",
+								"text": "A tree-base data structure that has two child nodes.<br>The left child node is always less than or equal to the parent.<br>The right child node is always greater than or equal to the parent.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "usezzihp",
+						"text": "Heaps",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "huftxkbl",
+								"text": "Can either Max Heaps or Min Heaps, where the children are always less than or greater<br>than the parent. A special type tree.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "trwhbhii",
+								"text": "Heaps can be used as a Priority Queue, where things can be added and even removed from the<br>middle of the queue.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "xyzgausb",
+						"text": "Linked List",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "fxyvovwt",
+								"text": "A list that is not linked in contiguous memory, rather, linked by pointers to the next<br>node.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "jowujpfs",
+								"text": "They can also be used for Stacks and Queues efficiently. They are also used in Hash Maps<br>occasionally.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "bxacxmio",
+								"text": "They can also be used in languages with no pointer structure, by having multiple lists to&nbsp;<br>keep track of freed and allocated nodes within a list.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "taanbybk",
+						"text": "Queues",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "nxxxbvry",
+								"text": "A Queue is a data structure that can be used to produce a FIFO mechanism. This is not just used<br>for actual wait queues but can also be used within other algorithms/DS in less-intuitive ways.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "femmbezk",
+								"text": "Deque",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "rsdlpefq",
+										"text": "A double sided queue",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "miyrsizv",
+						"text": "Red Black Trees",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "gpdvmdyj",
+								"text": "A type of Binary Search Tree that almost always ensures that runtimes of<br>any operation within the tree result in O(log(n))<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "chraejya",
+						"text": "Stack",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "pyuxjbdz",
+								"text": "A Data Structure that allows for LIFO mechanisms. Once again, stacks and queues are not only useful<br>for their intuitive reasons, but also for building or interacting between or within algorithms<br>or even other data structures.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "fyuuocbg",
+				"text": "Algorithms",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "aeioghui",
+						"text": "Divide And Conquer",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "pohvbkzx",
+								"text": "Basically just recursive functions.",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "vujozuha",
+								"text": "Binary Search",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "uctslwvh",
+								"text": "Number of Inversions",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "qfvqcohq",
+								"text": "Lottery Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "otjpvrfz",
+								"text": "Signatures / Time Slots Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "osivvsfy",
+								"text": "Majority Element Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "drzairfw",
+								"text": "Closest Points Algorithm",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "jgsxcuvc",
+						"text": "Greedy Algorithms",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "dzvngccc",
+								"text": "Algorithms that can use the least or most of a value<br>to make the next decision in an algorithm.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "vazhuuqi",
+								"text": "Gas Limit to destination Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "pfeupvqx",
+								"text": "Optimal Advertisement Placing Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "pvkgxvjd",
+								"text": "American Coin Change Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "umwknxwz",
+								"text": "Fractional Knapsack Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "xjqokpjm",
+								"text": "Maximum Number of Correct Prizes Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "liodgwgq",
+								"text": "Maximum Salary Arrangement Algorithm",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "aseddbud",
+						"text": "Dynamic Programming",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "aulzakdz",
+								"text": "International Coin Change Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "penqzmgx",
+								"text": "Edit Distance Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "yiipjcch",
+								"text": "Longest Common Subsequence Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "onrfcaze",
+								"text": "Primitive Calculator Calculation Algorithm",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "vqgyrdgn",
+						"text": "Numerical Algorithm",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "oblcggnq",
+								"text": "Algorithms that involve algebraic or numerical processes",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "arigwaeo",
+								"text": "Fibonacci Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "ybmsumag",
+								"text": "Greatest Common Denominator Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "exvwpvpi",
+								"text": "Least Common Multiple Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "yqqbkgxe",
+								"text": "Pisano Series Sum Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "hwwanazl",
+								"text": "Pisano Series Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "ayhjvoeu",
+								"text": "Last Digit of a Fibonacci sum of a range Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "anxadfvy",
+								"text": "Last Digit of a Fibonacci Sum Algorithm",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "ovtauljr",
+								"text": "Last Digit of a large Fibonacci Number Algorithm",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,427 @@
+{
+	"root": {
+		"id": "isokgovv",
+		"text": "Operating Systems",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "gbqrxibn",
+				"text": "Virtualization",
+				"notes": null,
+				"side": "right",
+				"layout": "graph-right",
+				"children": [
+					{
+						"id": "rpvcxsuj",
+						"text": "Process API",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "olicrtdl",
+								"text": "fork()",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "avkqqvoy",
+										"text": "This function will \"fork\" the process into two, a parent program and a child program. <br>It will not terminate both, just split the process into two.",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "aziopbds",
+								"text": "pipe",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "axxqzvxm",
+										"text": "The pipe function can be used for many things, including sending data between two child<br>processes. This will involve some waiting and two ends of a pipe.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "qvkuudwf",
+								"text": "wait()",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "iofgsizr",
+										"text": "This function will \"wait\" for any other process to finish, typically one that<br> was birthed by the parent program (if called in the parent program). <br>You can also specify the program to wait on.",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "ufixywtz",
+								"text": "exec()",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "osgpwesy",
+										"text": "This function will&nbsp; execute another program and kill the initial program that ran it.<br> There are many different ways to run this program and it can do many things.",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "bsmawiyr",
+						"text": "Limited Direct Execution",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "tjwlqska",
+								"text": "The purpose of the operating system was birthed from the idea that there should<br>less freely accessible software from the perspective of the user.<br>Users should have their things to do and the OS itself should handle things<br>that the users should not. Security is also a reason.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "alvwwcsp",
+								"text": "The idea of leaving complete control to a user will also be inefficient, as there are<br>certain things, such as scheduling programs, running background processes<br>and segmenting data that a User should not (rather, would not even want) do.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "owugspeu",
+						"text": "Scheduling",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ujwqxfko",
+								"text": "Algorithms",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "snryyzgw",
+										"text": "First In First Out (FIFO)",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "rvoizcfe",
+										"text": "Shortest Job First (SJF)",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "pmspzwwq",
+										"text": "Round Robin (RR)",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "ecuuklmk",
+										"text": "Multilevel Feedback Queue (MLFQ)",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "pmssevdf",
+												"text": "The MLFQ consists of a queue with levels of urgency. If a program uses<br>all it's CPU time, it is sent down a level. If a process switches to<br>I/O, then it is kept on the same queue level. This can result in&nbsp;<br>starvation of CPU intensive processes.<br>",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "cmiwftce",
+												"text": "Time Allotment tracking to have Gaming Tolerance.",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "yyyielgo",
+												"text": "Boosting to allow at least a fraction of time for the CPU intensive processes.",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "wbidlxgk",
+												"text": "Processes in the same level queue run in a Round Robin fashion.",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									},
+									{
+										"id": "byzkqmpi",
+										"text": "Completely Fair Scheduler (CFS) [LINUX]",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "fxucphrl",
+												"text": "vruntime - CFS runs in a fair fashion that goes in the order of which&nbsp;<br>process has the lowest vruntime. vruntime is typically given<br>in a small amount to high priority and large to low priority.<br>",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "taybjbpj",
+												"text": "sched_latency - This is the amount of time each process is given for<br>running. This amount of time reaches a maximum<br>as the priority of the process increases.<br>",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "oegspkhm",
+												"text": "niceness/priority",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "yqnhjykf",
+								"text": "Metrics",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "fyjiaimg",
+										"text": "Fairness (Evenly distributed time)",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "kfejbczr",
+										"text": "Response Time",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "kemoweao",
+										"text": "Turnaround Time (time till completion)",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "nznuvegz",
+										"text": "Efficiency",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "jhfkxrni",
+												"text": "Overlap - The process of running the CPU-intensive programs while the I/O intensive programs&nbsp;<br>are running the have maximum efficiency.<br>",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "jgdinkmt",
+								"text": "Problems",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "veuckbvs",
+										"text": "Starvation",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "zcvrsouv",
+										"text": "Gaming The Scheduler",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "trsiksyf",
+						"text": "Memory",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "erckwnbb",
+								"text": "Address Translation",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "cehmncly",
+										"text": "Memory Management Unit (MMU of CPU)",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "sjbdbqnz",
+												"text": "Keeps track of the base and the bounds registers of a page of memory in physical<br>memory that was translated by some virtual address.<br>",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "bgzqejfl",
+								"text": "Hardware Responsibilities",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "cvbzspzh",
+										"text": "Exception Handling",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "vqrzwqmp",
+										"text": "Memory Allocation",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "qqcetgec",
+										"text": "Traps/Keeping track of the Trap Table",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "gsmqhywr",
+												"text": "Chained Trapping - Trapping into a process, the process trapping into a Kernel-handled<br>responsibility, the kernel trapping back into the process, then process returning from<br>trap to give control back to the kernel after it is done running.<br>",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "fhowhokn",
+								"text": "Segmentation",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "xhcnophh",
+										"text": "Segments are objectified and conceptualized in the form of virtual addresses<br>then these virtual addresses are used to translate into physical memory<br>addresses.<br>",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "asisqbxr",
+										"text": "Problems",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "rlwgmlen",
+												"text": "Internal Fragmentation - Wasted space inside of many processes",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "wusmgjxe",
+												"text": "External Fragmentation - Wasted space outside, due to many carelessly placed<br>segments of memory (not compactly/non-coalesced).<br>",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									},
+									{
+										"id": "sudesuou",
+										"text": "Algorithms",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "zbhvxizt",
+												"text": "Best Fit",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "hrpilhxg",
+												"text": "First Fit",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "hieixklw",
+												"text": "Worst Fit",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "rwyctrzb",
+												"text": "Next Fit",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									},
+									{
+										"id": "drquofjh",
+										"text": "Paging - Fixed size slabs of memory",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "yryjfooh",
+												"text": "Page Tables - Tables of a certain number of pages to quickly<br>get access of the physical memory address.<br>",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "sjzosfuq",
+												"text": "Translation Lookaside Buffer (TLB) - A table that contains frequently accessed<br>virtual-to-physical memory access translations. Basically a cache for&nbsp;<br>translations.<br>",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "khxyetzl",
+												"text": "Page Table Directory - Allows for a master PTD to map to a large number of page tables, whether they<br>are allocated or not. This allows for some page tables to not be allocated,<br>but still can be allocated in the future when necessary, saving memory.<br>",
+												"notes": null,
+												"shape": "box",
+												"children": [
+													{
+														"id": "jxdnhjis",
+														"text": "Swapping - There is a physical memory bank that contains a few sub-frequently used<br>pages that are kept here and swapped when needed by the kernel. This is a slow&nbsp;<br>access part of memory since it is on the hardware.<br>",
+														"notes": null,
+														"shape": "box",
+														"children": [
+															{
+																"id": "xfmwrroa",
+																"text": "Least Recently Used Cache Policy - To keep the amount of page table misses to a minimum,<br>only the least recently used pages are evicted from the fast-pages and into the<br>hardware-slow memory of the swap.<br>",
+																"notes": null,
+																"shape": "box"
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

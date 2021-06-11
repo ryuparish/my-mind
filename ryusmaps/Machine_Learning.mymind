@@ -1,0 +1,400 @@
+{
+	"root": {
+		"id": "oafaotzb",
+		"text": "Machine Learning",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "nsvrddla",
+				"text": "Supervised Learning",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "nisasvlq",
+						"text": "Learning that utilizes instances and respective labels to those instances.",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "merjbgsp",
+						"text": "Supervised Neural Networks",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "xdpxwyyz",
+						"text": "Linear Regression/Classification",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "abrlfvsq",
+						"text": "Logistic Regression/Classification",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "sipsarzr",
+						"text": "Polynomial Regression/Classification",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "cdpiwtfl",
+						"text": "Ensembling",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ltksklbb",
+								"text": "Decision Trees",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "zzzjxzed",
+										"text": "Random Forests",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "wmkhjykt",
+												"text": "Random forests are typically decision trees that choose the best threshold/feature&nbsp;<br>out of a random set of limited features. The decisions of the trees are collected<br>and then used together in a vote-style manner.<br>",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									},
+									{
+										"id": "qeqtudoj",
+										"text": "Extra Forests",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "wecfliwz",
+												"text": "Extra Forests are Random Forests, except, the thresholds chosen are also randomized. If there are a<br>substantial number of trees, this can give a more bias, but certainly less variance result.<br>",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									},
+									{
+										"id": "ckcldjyp",
+										"text": "Gini Impurity",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "kojxtzve",
+												"text": "Ratio based on the \"cleaness\" of the cut of a split in a decision tree.",
+												"notes": null,
+												"shape": "box"
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "xepgnxqs",
+								"text": "Blending",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "heexxfza",
+										"text": "Training multiple classifiers or regressors then using their combined<br>predictions as instances groups and labels to train ANOTHER<br>classifier to \"blend\" them.",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "vatlvklt",
+								"text": "Voting Classifiers",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "igqgmswu",
+										"text": "A group of different classifiers or regressors to predict a class or value of a&nbsp;<br>instances, then choosing either hard-voting or soft-voting to select<br>a real outcome.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "zkjxsdmp",
+								"text": "Bagging and Pasting",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "cawoisaq",
+										"text": "Bagging is where you let each classifier be trained on a set of instances that is replaced when<br>the next classifier will be selecting it's own instances.<br>",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "cxrjajfd",
+										"text": "Pasting is where you let each classifier be trained on a set of instances that is NOT replaced when the<br>next classifier will be selecting it's own instances.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "amlomlnd",
+						"text": "Gradient Descent",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ukkhrlce",
+								"text": "The process of using the gradient with respect to the loss function to get to the lowest possible<br>value of loss. This translates to lowering the amount of error in each instance.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "nptepzlg",
+								"text": "Batch Gradient Descent",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "vvdejjia",
+										"text": "Using all the instances for every step to train the model and propogate loss. (very accurate,<br>but very slow for large datasets and sometimes impossible to fit in memory)<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "ejbkmxgb",
+								"text": "Stochastic Gradient Descent",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "jrudvlhp",
+										"text": "Using only one instance for every step. It is very efficient and can<br>be used for online learning. (Lots of unpredictable behavior and&nbsp;<br>will never converge to a single spot)<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "yvpvejhc",
+								"text": "Mini-Batch Gradient Descent",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "odkcefbx",
+										"text": "Using a smaller set of the whole batch of data to train each step. (this is both efficient and<br>decently quick, although bias will be higher than Batch Gradient Descent)<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "wadpysmh",
+				"text": "Unsupervised Learning",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "blggurbr",
+						"text": "Clustering",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "zinwznbo",
+								"text": "K-Nearest Neighbors",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "dnlaclri",
+										"text": "Using k nearest neighbors to classify each instance. A large cluster will be notoriously<br>dominant in the classification.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "dtqoimnk",
+								"text": "K-Means Clustering",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "nenngiuv",
+										"text": "Using an initialized and trained set of k points<br>to classify each instance.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "mptageny",
+								"text": "DBSCAN",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "zimpiwki",
+										"text": "Uses density to classify each instance rather than<br>using center points of any kind.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "croyvyxe",
+						"text": "Generative Adversarial Networks",
+						"notes": null,
+						"shape": "box"
+					}
+				]
+			},
+			{
+				"id": "zgpyxwpq",
+				"text": "Semi-Supervised Learning",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "sdplpkyc",
+						"text": "Data Augmentation",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "techplso",
+								"text": "Label Propagation through representative clustering.",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "gzvamsqx",
+				"text": "Data Analysis&nbsp;",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "zshcswjf",
+						"text": "Manifold Learning and Principle Component Analysis",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "thgstprv",
+						"text": "Dimensionality Reduction",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "wlfvxhxj",
+								"text": "Manifold Learning and Principle Component Analysis",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "rdjpgydo",
+								"text": "Using a Kernel Reduction Techinque",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "uvswujzf",
+				"text": "Problems",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "agactmfh",
+						"text": "Overfitting ( high variance )",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "rnjmngop",
+						"text": "Underfitting ( high bias )",
+						"notes": null,
+						"shape": "box"
+					}
+				]
+			},
+			{
+				"id": "fhqrwhqt",
+				"text": "Regularization",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "dyqdzyvo",
+						"text": "Ridge Regression",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "qgsbqzvp",
+								"text": "Penalizes the size of the weights to a certain size (it is squared).<br>Large weights are penalized severely and small weights&nbsp;<br>are penalized very slightly.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "sfpwzflh",
+						"text": "Lasso Regression",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "vmgktmgw",
+								"text": "Penalizes the sum of the values of the weights . Meaning that only if the main error<br>goes up a substantial amount will the weight remain. Weights of little value<br>will not last if the penalty is severe.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "qqotvmcb",
+						"text": "Elastic Net",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "jpxejktd",
+								"text": "Uses an inversely related combination of both Ridge Regression and Lasso Regression<br>to regularize a loss function / model.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

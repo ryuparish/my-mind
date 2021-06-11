@@ -1,0 +1,206 @@
+{
+	"root": {
+		"id": "fmjlghja",
+		"text": "Linear Algebra",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "qprsdoks",
+				"text": "Linear Equations",
+				"notes": null,
+				"side": "right"
+			},
+			{
+				"id": "osjisvdw",
+				"text": "Matrices and their applications",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "nqpyovtj",
+						"text": "Mathematics",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "zmefdkty",
+								"text": "Convenient and understandable compact way of&nbsp;<br>organizing and solving large systems of linear<br>equations with perhaps a large number&nbsp;<br>of variables<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "mmrrngse",
+						"text": "Properties",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "uuysoupd",
+								"text": "Linear Independence - When a more than one matrix or vector is not a&nbsp;<br>scaled version of another.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "xlhvbwjs",
+						"text": "Transformations",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ucqpddjy",
+								"text": "Mostly used in graphics or typesetting. From Italics to rotation to inversion to filtering.",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "scsafllj",
+						"text": "Economics",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "grlgsytu",
+								"text": "Leontif Input Output Model - Used for businesses/industries to see a continuous cycle<br>of product used to product needed to produce. This is an ongoing chain that<br>can continuously change.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "yfnphdnm",
+						"text": "Electrical Circuits",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "zggrkpdj",
+								"text": "Circuits can be represented by linear equations and can therefore be compacted into&nbsp;<br>matrices for efficient computation of values such as resistance, voltage, and current.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "dmdutptn",
+				"text": "Algebraic Processes",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "lsmgfjnq",
+						"text": "Inverting a matrix",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "nbwtkaql",
+								"text": "2x2 matrix&nbsp;",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "ycewwebr",
+										"text": "1/(ad-cb) ([[d, -b], [-c, a]])",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "lmnqslcr",
+								"text": "Partitioning Larger Matrices",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "fxbrqyua",
+								"text": "Reduced Row Echelon Form of an augmented matrix",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "jhpnirap",
+										"text": "Since if you do the actions to turn a matrix into the&nbsp;<br>identity matrix:<br><br>A|I -&gt; I|A^(-1)<br><br>Then reduce the left side of the equation to identity.<br>The right side will become the inverse of that matrix.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "antsxalb",
+				"text": "Mathematical Concepts",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "tlfrzfmd",
+						"text": "Subspaces",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "qyxezhix",
+								"text": "Subspaces are a set of vectors (a matrix) that<br>contains the zero vector, and is closed under<br>both addition and multiplication.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "tipvhajs",
+						"text": "Eigenvalues and Eigenvectors",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "fnelbtiw",
+								"text": "Every square matrix (of matrix converted into a square matrix) has<br>a set of eigenvalues that then translate into their respective eigenvectors.<br>These eigenitems are important, because they have properties tied<br>to ease of computation and informative aspects.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "opiihxpt",
+								"text": "Au = lambda(u) - Meaning, a matrix multiplied by one of it's eigenvectors will<br>produce the same vector but scaled by the value of a respective eigenvalue.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "utupbkpx",
+								"text": "Characteristic Equation",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "awnagycu",
+										"text": "det (A - (lambda)I) = 0",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "wggdrqcz",
+										"text": "This equation also produces was is called the characteristic polynomial",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
