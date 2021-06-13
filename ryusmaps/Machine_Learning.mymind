@@ -94,6 +94,48 @@
 												"shape": "box"
 											}
 										]
+									},
+									{
+										"id": "nlskpxvq",
+										"text": "Boosting",
+										"notes": null,
+										"shape": "box",
+										"children": [
+											{
+												"id": "anpsoptt",
+												"text": "Boosting is the general process in which there is the production of sequential classifiers within an<br>ensemble. Each classifier/predictor is typically trained based on the mistakes of the&nbsp;<br>previous predictor to make up for the more-difficult instances.<br>",
+												"notes": null,
+												"shape": "box"
+											},
+											{
+												"id": "dwzitbla",
+												"text": "AdaBoosting (Adaptive Boosting)",
+												"notes": null,
+												"shape": "box",
+												"children": [
+													{
+														"id": "fmbvxbdr",
+														"text": "Adaboosting is where the weight of each instance can be&nbsp;<br>modified to put heavier weight on the difficult<br>instances and thus give more loss when they are<br>marked incorrectly.&nbsp;",
+														"notes": null,
+														"shape": "box"
+													}
+												]
+											},
+											{
+												"id": "ldklefmt",
+												"text": "Gradient Boosting&nbsp;",
+												"notes": null,
+												"shape": "box",
+												"children": [
+													{
+														"id": "qwcifkgr",
+														"text": "<span style=\"font-size: 17.6px;\">Gradient Boosting is the process of making more predictors(typically trees) for the ensemble by</span><br style=\"font-size: 17.6px;\"><span style=\"font-size: 17.6px;\">training sequential predictors on the residual of the previous predictor. Then the&nbsp;</span><br style=\"font-size: 17.6px;\"><span style=\"font-size: 17.6px;\">predictions of all the predictors are summed and the final ensemble is used.</span>",
+														"notes": null,
+														"shape": "box"
+													}
+												]
+											}
+										]
 									}
 								]
 							},
@@ -340,6 +382,18 @@
 					{
 						"id": "rnjmngop",
 						"text": "Underfitting ( high bias )",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "uugfyjqr",
+						"text": "Data Mismatches",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "fcdgfdfk",
+						"text": "Non-numerical data conversion (encoding)",
 						"notes": null,
 						"shape": "box"
 					}
