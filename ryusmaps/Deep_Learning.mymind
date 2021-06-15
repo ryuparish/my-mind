@@ -1,0 +1,132 @@
+{
+	"root": {
+		"id": "zpffdixg",
+		"text": "Deep_Learning",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "bycrosae",
+				"text": "Architecture",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "hqjhmxwz",
+						"text": "Primitive Components",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "iklqyych",
+								"text": "Multi Layer Perceptron - The basic model of a neural network, comprising of an input<br>layer, a hidden layer with an activation function, and an output layer with<br>a varied activation function.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "dpjbwjcb",
+								"text": "The Perceptron - A single node (very crappy) that only used the step function for it's activation<br>function. It was impossible for it to even learn the XOR function, rendering<br>it useless unless it was stacked (the multilayer perceptron).<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "frmbeckk",
+				"text": "Hyperparameters",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "twjdobws",
+						"text": "Learning Rate",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "cdlyjvmr",
+								"text": "The Learning Rate is probably one of your most important hyper parameters if not the most important.<br>When changing the batch size, you should also adjust the learning rate in a proportional manner,<br>since larger batch size may need a lower learning rate to avoid overfitting.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "rvtjapgv",
+						"text": "Optimizer",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "nuzhmsvs",
+						"text": "Batch Size",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "bnhulxwd",
+								"text": "Batch size can effect the amount of generalization that a model has. Large batch sizes may<br>achieve a high training accuracy, but may not generalize as well as a model trained<br>on a low batch size.&nbsp;",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "lbfngaui",
+						"text": "Activation Function",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "huhacqdg",
+						"text": "Epoch",
+						"notes": null,
+						"shape": "box"
+					}
+				]
+			},
+			{
+				"id": "kkwbdhar",
+				"text": "Theory",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "eoxbhiqz",
+						"text": "Large Network Theory - As the number of nodes and layers increase, the&nbsp;<br>neural network is more unlikely to get stuck in a local minimum.<br>",
+						"notes": null,
+						"shape": "box"
+					}
+				]
+			},
+			{
+				"id": "qbqaxijg",
+				"text": "Biological Relativity",
+				"notes": null,
+				"side": "left"
+			},
+			{
+				"id": "zqeqsloi",
+				"text": "Back Propagation",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "qeqaekuv",
+						"text": "Back Propagation is the process in which the gradient of the loss function is calculated and the chain<br>rule is utilized along with the partial derivative to obtain the gradient of a neuron.<br>It is a series of targeted partial derivatives that are multiplied together and are then<br>significant due to the chain rule.<br>",
+						"notes": null,
+						"shape": "box"
+					},
+					{
+						"id": "btnencuk",
+						"text": "For every instance in the training mini batch, the instance will want to increase the weights which would've made<br>the answer closer to the correct y value and decrease the weights that led to an incorrect prediction. The<br>summation of the correctional values on each weight is performed, each weight adjusted<br>to the average correction value given by each instance in the mini-batch.<br>",
+						"notes": null,
+						"shape": "box"
+					}
+				]
+			}
+		]
+	}
+}

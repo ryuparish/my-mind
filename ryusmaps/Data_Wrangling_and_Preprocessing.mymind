@@ -1,0 +1,47 @@
+{
+	"root": {
+		"id": "fuzfjbmk",
+		"text": "Data Wrangling and Preprocessing",
+		"notes": null,
+		"layout": "map",
+		"shape": "ellipse",
+		"children": [
+			{
+				"id": "qegftbxi",
+				"text": "Feature Scaling",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "licmfpad",
+						"text": "MinMax Scaling",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "evygiund",
+								"text": "MinMax Scaling is the process of substracting every value by the minimum value then<br>dividing by the (maximum value - minimum value). This is basically<br>just getting the percentages of everything.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "ulvhyptd",
+						"text": "Standardization",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "jykqsjwl",
+								"text": "Standardization is the process of subtracting everything by the mean value, then dividing<br>by the standard deviation. This is a classic statistically significant technique.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -396,6 +396,12 @@
 						"text": "Non-numerical data conversion (encoding)",
 						"notes": null,
 						"shape": "box"
+					},
+					{
+						"id": "mthsbkbk",
+						"text": "Vanishing/Exploding Gradients in Deep Learning",
+						"notes": null,
+						"shape": "box"
 					}
 				]
 			},
