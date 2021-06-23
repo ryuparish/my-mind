@@ -1,0 +1,82 @@
+{
+	"root": {
+		"id": "ndmuhhct",
+		"text": "Discrete_Mathematics",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "ffbyjbrk",
+				"text": "Proofs and Techniques",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "fixdsflb",
+						"text": "Strategy",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "kwabsbkw",
+								"text": "The art of proofing is the method in which you use definitions,<br>theorems, lemmas, and axioms to prove a statement.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "ebryyvvj",
+						"text": "Methods",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "vzjuyrim",
+								"text": "Direct Proof",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "uwqcdell",
+								"text": "Proof by Induction",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "kfllrzpf",
+								"text": "Proof by Contradiction",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "wufpoiod",
+								"text": "Proof by Contraposition&nbsp;",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "xjpiapkm",
+								"text": "Exhaustive Proofs",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "ignynpid",
+								"text": "Existence Proofs",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "cavplfyf",
+								"text": "Uniqueness Proofs",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

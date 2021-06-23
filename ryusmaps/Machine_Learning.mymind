@@ -364,6 +364,32 @@
 								"shape": "box"
 							}
 						]
+					},
+					{
+						"id": "jlbwlwdl",
+						"text": "Loss Functions",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "kikofgfc",
+								"text": "Mean Squared Error (emphasis on the large mistakes)",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "qefpjrgx",
+								"text": "Absolute Error (Linear emphasis on everything)",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "kxpovjtq",
+								"text": "Huber Loss (Absolute past a certain threshold and MSE when lower than threshold)",
+								"notes": null,
+								"shape": "box"
+							}
+						]
 					}
 				]
 			},
@@ -401,7 +427,15 @@
 						"id": "mthsbkbk",
 						"text": "Vanishing/Exploding Gradients in Deep Learning",
 						"notes": null,
-						"shape": "box"
+						"shape": "box",
+						"children": [
+							{
+								"id": "aiiefepa",
+								"text": "Vanishing gradients occur because of the chain rule in back propagation. If each partial derivative is less<br>than 1, the further you move toward the lower (leftmost) units, the infinitesimally smaller the gradient<br>for those units will be.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
 					}
 				]
 			},

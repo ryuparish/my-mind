@@ -50,14 +50,150 @@
 								"text": "The Learning Rate is probably one of your most important hyper parameters if not the most important.<br>When changing the batch size, you should also adjust the learning rate in a proportional manner,<br>since larger batch size may need a lower learning rate to avoid overfitting.<br>",
 								"notes": null,
 								"shape": "box"
+							},
+							{
+								"id": "vkfjmuej",
+								"text": "Learning Schedules",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "gwtnwvhy",
+										"text": "Power Scheduling",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "mfbjouhg",
+										"text": "Exponential Scheduling",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "bxeenjlb",
+										"text": "Performance Scheduling",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "jzxqcntb",
+										"text": "Piecewise Constant Scheduling",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "tdtfdnvd",
+										"text": "Icycle Scheduling",
+										"notes": null,
+										"shape": "box"
+									}
+								]
 							}
 						]
 					},
 					{
 						"id": "rvtjapgv",
-						"text": "Optimizer",
+						"text": "Optimizers",
 						"notes": null,
-						"shape": "box"
+						"shape": "box",
+						"children": [
+							{
+								"id": "jdhksios",
+								"text": "Direct Gradient Descent",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "xlncynzy",
+								"text": "Momentum",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "rgaubogj",
+										"text": "\"Continuously adjusted acceleration with respect to consistency.\"",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "ulrycjik",
+								"text": "Nesterov Momentum GD",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "hhyrhnzr",
+										"text": "\"<span style=\"font-size: 17.6px;\">Continuously adjusted acceleration with respect to consistency</span>&nbsp;while taking<br>into consideration one step ahead\"&nbsp;<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "lznzeorg",
+								"text": "AdaGrad (Adaptive Gradients)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "hqbaopyg",
+										"text": "\"Dividing the learning gradient by the squared gradient to<br>dwarf sharp turns\"<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "pufipizc",
+								"text": "RMSProp (Root Mean Squared Propagation)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "pjptstyt",
+										"text": "\"AdaGrad with adjustable focus Beta\"",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "tajxrkyt",
+								"text": "Adam (Adaptive Momentum)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "ivcgsamg",
+										"text": "\"AdaGrad and Momentum BOTH with adjustable focus Beta1 and Beta2\"",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "dsuoivic",
+								"text": "AdaMax",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "esjeqymo",
+								"text": "NAdam",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "aibohevo",
+										"text": "Nesterov + Adam, \"Adam with lookahead\"",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
 					},
 					{
 						"id": "nuzhmsvs",
@@ -98,14 +234,56 @@
 						"text": "Large Network Theory - As the number of nodes and layers increase, the&nbsp;<br>neural network is more unlikely to get stuck in a local minimum.<br>",
 						"notes": null,
 						"shape": "box"
+					},
+					{
+						"id": "ovafpyuv",
+						"text": "Initialization",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "vcgavjgs",
+								"text": "Xavier Glorot Initialization - This theory concluded that in order to avoid the vanishing gradient problem<br>the variance (sigma^2) of the input values to a layer must be equivalent to<br>the variance of the output values of that same layer.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "rlmlaubl",
+								"text": "Fanin - The number of neurons that are the input.<br>Fanout - The number of neurons that are the output.<br>Fanavg - (Fanin + Fanout) / 2<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "jlfbkbwl",
+						"text": "Momentum Optimization",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ctevknjn",
+								"text": "The main technique is typically to account for and adapt to the main problems of&nbsp;<br>overshooting, inaccurate sharp turns, and steady-but-slow progression.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "mkixuvei",
+						"text": "Relevant Mathematics",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "gufcziwf",
+								"text": "Deep Learning is the intersection of Statistics for analysis and improvement,<br>Linear Algebra for efficiency and parallelism, and Calculus for&nbsp;<br>quantification of relations.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
 					}
 				]
-			},
-			{
-				"id": "qbqaxijg",
-				"text": "Biological Relativity",
-				"notes": null,
-				"side": "left"
 			},
 			{
 				"id": "zqeqsloi",
@@ -124,6 +302,144 @@
 						"text": "For every instance in the training mini batch, the instance will want to increase the weights which would've made<br>the answer closer to the correct y value and decrease the weights that led to an incorrect prediction. The<br>summation of the correctional values on each weight is performed, each weight adjusted<br>to the average correction value given by each instance in the mini-batch.<br>",
 						"notes": null,
 						"shape": "box"
+					}
+				]
+			},
+			{
+				"id": "qvbenjro",
+				"text": "Activation Functions",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "wutpkcir",
+						"text": "ReLU",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "idsarzcp",
+								"text": "In the Fully Connected Case with any runtime latency:<br>SELU &gt; ELU &gt;Leaky ReLU (and the variants)&gt; Leaky ReLU &gt; ReLU &gt; tanh &gt; Sigmoid(Logistic)&nbsp;<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "rrywneoo",
+								"text": "Dying ReLU Problem - When the weights associated with a neuron with a ReLU activation&nbsp;<br>are all negative, resulting in a neuron that always outputs 0.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "cxzrrtzz",
+								"text": "Leaky ReLU",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "nlwqgqsj",
+								"text": "Randomized Leaky ReLU",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "bpqxxosw",
+								"text": "Parametrized Leaky ReLU",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "hnbnxxns",
+								"text": "Exponential Linear Unit (ELU)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "tkoqkshs",
+										"text": "Outperforms nearly all types of ReLU at the cost of speed.",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "qyuhecqs",
+								"text": "SELU (Scaled ELU)",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "tnqmqoyh",
+				"text": "Problems",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "vcsebzsw",
+						"text": "Vanishing/Exploding Gradients",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "xmyfhxcx",
+								"text": "Batch Normalization",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "ktdfpxym",
+										"text": "Batch normalization is the process in which each layer<br>of the neural network is normalized based on the values<br>within the mini-batch (mean and standard deviation are<br>calculating for each node including the input layer).<br>",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "wcuxaocw",
+										"text": "For each layer, there is a parametrized scaling vector and parametrized bias vector<br>to perform a linear transformation on the incoming inputs to the neural networks<br>liking. This prevents vanishing gradients, since scaling can be controlled<br>along side the activation functions transformation.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"id": "cdkuzzmt",
+				"text": "Transfer Learning",
+				"notes": null,
+				"side": "left",
+				"children": [
+					{
+						"id": "opfvnjxo",
+						"text": "Pretrained Layer Techniques",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "helrkwcp",
+								"text": "Using a same-style SOTA/Community network that was trained on a similar<br>dataset for a similar task. Then, chopping off and replacing the output or more layers and&nbsp;<br>\"freezing\" the newly gained ones. Perhaps even slowly unfreezing them or removing layers<br>to empirically gain progress on your own task.<br>",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "vcotqrph",
+								"text": "Auxiliary Trained Neural Networks",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "vepqkikz",
+										"text": "Perhaps a SOTA/Community GAN or one-shot identifier has lower layers that has learned<br>useful features detection and now can be used for predictions/classification on your<br>task. (\"Intuition then Prediction\")<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
 					}
 				]
 			}
