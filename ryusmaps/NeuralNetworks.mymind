@@ -1,0 +1,50 @@
+{
+	"root": {
+		"id": "uoyzfifa",
+		"text": "Neural Networks",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "lfxrpbgx",
+				"text": "Dense Models (Multi-Layer Perceptrons)",
+				"notes": null,
+				"side": "right"
+			},
+			{
+				"id": "diupfxij",
+				"text": "Convolutional Models",
+				"notes": null,
+				"side": "left"
+			},
+			{
+				"id": "izapgvxf",
+				"text": "Recurrent Models",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "blbhjawo",
+						"text": "Neuron / Unit Architecture",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "dnfkofhk",
+								"text": "Long Short Term Memory (LSTM) Units",
+								"notes": null,
+								"shape": "box"
+							},
+							{
+								"id": "mokkdytl",
+								"text": "Gated Recurrent Units (GRUs)",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

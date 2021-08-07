@@ -1,0 +1,107 @@
+{
+	"root": {
+		"id": "klagzqrn",
+		"text": "Data Analytics",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "zoldslhn",
+				"text": "Performance",
+				"notes": null,
+				"side": "right",
+				"shape": "box",
+				"children": [
+					{
+						"id": "iemvfmsf",
+						"text": "Precision",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "bkxacllf",
+								"text": "The True Positives over the True Positives + the False Positives (Correct Activations over all Activations)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "ybrpuxhg",
+										"text": "TP<br>--------------<br>TP + FP<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "cbwgwihv",
+						"text": "Accuracy",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "spzflxgc",
+								"text": "The True Positives and the True Negatives over all the samples in total",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "cseedtvm",
+										"text": "TP + TN<br>-----------------------<br>ALL SAMPLES<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "xsvahccp",
+						"text": "Specificity",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ezbldgxf",
+								"text": "The True Negatives over the True Negatives + False Positives (TN over all Negatives)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "ezwmvivk",
+										"text": "TN<br>-------------------<br>TN + FP<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					},
+					{
+						"id": "yjcwnqwi",
+						"text": "Sensitivity",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "itlqapxq",
+								"text": "The True Positives over the True Positives + False Negatives (TP over all Positives)",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "geiuvmop",
+										"text": "TP<br>------------------<br>TP + FN<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

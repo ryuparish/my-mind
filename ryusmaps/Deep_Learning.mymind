@@ -236,26 +236,6 @@
 						"shape": "box"
 					},
 					{
-						"id": "ovafpyuv",
-						"text": "Initialization",
-						"notes": null,
-						"shape": "box",
-						"children": [
-							{
-								"id": "vcgavjgs",
-								"text": "Xavier Glorot Initialization - This theory concluded that in order to avoid the vanishing gradient problem<br>the variance (sigma^2) of the input values to a layer must be equivalent to<br>the variance of the output values of that same layer.<br>",
-								"notes": null,
-								"shape": "box"
-							},
-							{
-								"id": "rlmlaubl",
-								"text": "Fanin - The number of neurons that are the input.<br>Fanout - The number of neurons that are the output.<br>Fanavg - (Fanin + Fanout) / 2<br>",
-								"notes": null,
-								"shape": "box"
-							}
-						]
-					},
-					{
 						"id": "jlfbkbwl",
 						"text": "Momentum Optimization",
 						"notes": null,
@@ -278,6 +258,20 @@
 							{
 								"id": "gufcziwf",
 								"text": "Deep Learning is the intersection of Statistics for analysis and improvement,<br>Linear Algebra for efficiency and parallelism, and Calculus for&nbsp;<br>quantification of relations.<br>",
+								"notes": null,
+								"shape": "box"
+							}
+						]
+					},
+					{
+						"id": "jhrxqjed",
+						"text": "Loss Function",
+						"notes": null,
+						"shape": "box",
+						"children": [
+							{
+								"id": "ohiejvbk",
+								"text": "The loss function total is used to see the performance of the model at the current epoch,&nbsp;<br>but the equation itself is used to algebraically find the derivative with respect<br>to any weight.<br>",
 								"notes": null,
 								"shape": "box"
 							}
@@ -398,6 +392,26 @@
 									{
 										"id": "wcuxaocw",
 										"text": "For each layer, there is a parametrized scaling vector and parametrized bias vector<br>to perform a linear transformation on the incoming inputs to the neural networks<br>liking. This prevents vanishing gradients, since scaling can be controlled<br>along side the activation functions transformation.<br>",
+										"notes": null,
+										"shape": "box"
+									}
+								]
+							},
+							{
+								"id": "ovafpyuv",
+								"text": "Initialization",
+								"notes": null,
+								"shape": "box",
+								"children": [
+									{
+										"id": "vcgavjgs",
+										"text": "Xavier Glorot Initialization - This theory concluded that in order to avoid the vanishing gradient problem<br>the variance (sigma^2) of the input values to a layer must be equivalent to<br>the variance of the output values of that same layer.<br>",
+										"notes": null,
+										"shape": "box"
+									},
+									{
+										"id": "rlmlaubl",
+										"text": "Fanin - The number of neurons that are the input.<br>Fanout - The number of neurons that are the output.<br>Fanavg - (Fanin + Fanout) / 2<br>",
 										"notes": null,
 										"shape": "box"
 									}
