@@ -1,0 +1,55 @@
+{
+	"root": {
+		"id": "rrdbvzoz",
+		"text": "Natural Language Processing<br>",
+		"notes": null,
+		"layout": "map",
+		"children": [
+			{
+				"id": "xyxmiutk",
+				"text": "Terms<br>",
+				"notes": null,
+				"side": "right",
+				"children": [
+					{
+						"id": "tsltdkhk",
+						"text": "Token<br>",
+						"notes": null
+					},
+					{
+						"id": "bmkfjzfe",
+						"text": "Id/Encoding<br>",
+						"notes": null
+					},
+					{
+						"id": "plvbvvel",
+						"text": "Gold/Golden <br>",
+						"notes": null
+					},
+					{
+						"id": "cvelxoqr",
+						"text": "Span<br>",
+						"notes": null
+					},
+					{
+						"id": "yisdiehi",
+						"text": "Context<br>",
+						"notes": null
+					}
+				]
+			},
+			{
+				"id": "buawmacr",
+				"text": "Training Methods<br>",
+				"notes": null,
+				"side": "left"
+			},
+			{
+				"id": "lhxnugsf",
+				"text": "Theories for approach<br>",
+				"notes": null,
+				"side": "right"
+			}
+		]
+	}
+}
